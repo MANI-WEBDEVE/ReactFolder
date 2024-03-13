@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a li {
+  color: aliceblue;
+}
+ul {
+  background-color: black;
+  display: flex;
+  gap: 34px;
+  padding: 34px;
+}
+.red {
+  background-color: red;
+  color: white;
+}
