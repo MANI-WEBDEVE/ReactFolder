@@ -30,7 +30,10 @@ function App() {
   const handleEdit = () => {};
   //-------------------------------------------------------------------------------------------------------------------------------------------
   // ya Delete function ha jo Todo ko delete karna ka liya istamal ho ga
-  const handleDelete = () => {};
+  const handleDelete = (e) => {
+    console.log(e.target.value)
+
+  };
   //-------------------------------------------------------------------------------------------------------------------------------------------
   //ya input ka checkBox handle kar ta ha
   const handleCheckBox = (e) => {

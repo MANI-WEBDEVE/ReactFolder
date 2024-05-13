@@ -11,7 +11,7 @@
   flex-wrap: wrap;
 }
 .card {
-  height: 100vh;
+  height: 54vh;
   width: 353px;
   transition: 0.9s all;
 }

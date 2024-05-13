@@ -4,8 +4,6 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-  // const [name, setName] = useState("inam");
   // const [form, setForm] = useState({email: "" , phone: "" })
   const [form, setForm] = useState({});
 
@@ -18,7 +16,7 @@ function App() {
   const handleChange = (e) => {
     // setName(e.target.value);
     setForm({ ...form, [e.target.name]: e.target.value });
-    console.log(form);
+    console.log(e.target.value)
   };
   return (
     <>
@@ -31,15 +29,16 @@ function App() {
       <input
         type="text"
         name="email"
-        value={form.email ? form.email : ""}
+        value={form.email ? form.email : ''}
         onChange={handleChange}
       />
       <input
         type="text"
         name="phone"
-        value={form.phone ? form.phone : ""}
+        value={form.phone ? form.phone : ''}
         onChange={handleChange}
       />
+      {setForm !== '' && <p>the email is: {form.email} and password is: {form.phone}</p>}
       {/* <input type="text" name="email" value={form.email} onChange={handleChange} /> */}
       {/* <input type="text" name= "phone" value={form.phone} onChange={handleChange} /> */}
     </>

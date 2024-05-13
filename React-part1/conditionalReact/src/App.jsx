@@ -21,6 +21,15 @@ function App() {
     },
   ]);
 
+  let Todo = ({todo}) => {
+    return (
+      <>
+      <div>{todo.title}</div>
+      <div>{todo.desc}</div>
+      </>
+    )
+  }
+
   return (
     <>
       <div>
@@ -33,13 +42,16 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        {todos.map((todo) => {
+        {/* {todos.map((todo) => {
           return (
             <div key={todo.title}>
               <div className="todo">{todo.title}</div>
               <div className="todo">{todo.desc}</div>
             </div>
           );
+        })} */}
+        {todos.map(item => {
+          return <Todo key={item.title} todo={item} />
         })}
         {btnshow ? <button>show true</button> : <button>show false</button>}
         <button onClick={() => setCount(setBtnshow(!btnshow))}>

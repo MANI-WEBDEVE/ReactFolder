@@ -12,7 +12,7 @@ function App() {
   const [color, setColor] = useState(0);
   //Example of count change and color Value change
   useEffect(() => {
-    alert("this is count and color value change");
+    alert("count was changed");
     setColor(color + 1);
   }, [count]);
 

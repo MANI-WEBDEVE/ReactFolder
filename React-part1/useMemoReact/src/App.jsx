@@ -3,7 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 
-const num = new Array(30_000_000).fill(0).map((_, i) => {
+const num = new Array(30_000_000).fill(0).map((item, i) => {
   return {
     index: i,
     isMagical: i === 10_000_000 ,
@@ -31,16 +31,14 @@ function App() {
       <div className="card">
         <button onClick={() => {
           setCount((count) => count + 1)
-          if(count == 4){
-            setNumber
+          if(count == 10){
+            setNumber(
               new Array(3_000_000).fill(0).map((_, i) => {
                 return {
                   index: i,
                   isMagical: i === 1_000_000 ,
                 };
-              });
-            console.log(setNumber)
-            console.log(num.filter)
+              }));
           }
           
           }}>

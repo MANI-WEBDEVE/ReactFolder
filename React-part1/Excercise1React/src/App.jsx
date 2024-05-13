@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
-import reactLogo from "./assets/react.svg";
 import Navbar from "../src/components/Navbar";
-import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
@@ -19,12 +17,14 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
-      <div className="cardContainer ">
+      <div className="w-full min-h-screen">
+
+      <div className="cardContainer min-h-screen ">
         {cards.map((card) => {
           return (
             <div
               key={card.id}
-              className="card border border-gray-500 m-5 p-3 rounded-lg "
+              className="card h-[120px] border border-gray-500 m-5 p-3 rounded-lg "
             >
               <h1 className="text-3xl ">{card.title}</h1>
               <p>{card.body}</p>
@@ -33,6 +33,7 @@ function App() {
             </div>
           );
         })}
+      </div>
       </div>
     </>
   );
