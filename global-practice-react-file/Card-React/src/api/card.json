@@ -10,6 +10,16 @@
       "watchNow" : "http://www.dodear.com/en/movie/390134"
     },
     {
+      "name": "Apes On Planets",
+      "key": "Apes On Planets",
+      "URI": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz-E0XDIctledXSQ_rYr8F3sewQVuQJb0SUA&s",
+      "description": "A collection of 10,000 unique Apes on the Movies.",
+      "rating": "4.1",
+      "price": "0.03",
+      "category": ["Collectibles", "advanture", "Sci-Fi"],
+      "watchNow" : "http://www.dodear.com/en/movie/390134"
+    },
+    {
       "name": "Munjya",
       "key": "Munjya",
       "URI": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG9zfluadFEjsAG3BnuMolU-cWjjYGy-1ZBQ&s",

@@ -2,10 +2,10 @@ import React from "react";
 import api from "../api/seriesData.json";
 import SeriesCard from "./SeriesCard";
 
-const NetCard = () => {
+const NetCard = () => { 
   return (
     <>
-      <ul>
+      <ul className="container">
         {api.map((curElem) => {
             return  <SeriesCard key={curElem.key} curElem= {curElem}/>
         })}
