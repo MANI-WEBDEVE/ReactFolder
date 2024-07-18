@@ -6,3 +6,32 @@
   
 }
 
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grandFatherDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 420px;
+  width: 400px;
+  background-color: red;
+}
+.ParentDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80%;
+  width: 80%;
+  background-color: green;
+}
+
+.childDiv {
+  height: 40%;
+  width: 40%;
+  background-color: blue;
+}
