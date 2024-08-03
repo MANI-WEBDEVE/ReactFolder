@@ -1,4 +1,7 @@
-import DerivdState from "./components/Hooks/DerivdState"
+// import DerivdState from "./components/Hooks/DerivdState";
+
+
+import ToggleSwitch from "./projectHook/toggleSwitch/ToggleSwitch";
 function App() {
   return (
     <>
@@ -6,14 +9,14 @@ function App() {
 
       </UseState>
       <Sibling/> */}
-    {/* <UseStateChallange/> */}
-        <DerivdState/>
-
+      {/* <UseStateChallange/> */}
+      {/* <DerivdState /> */}
+      <ToggleSwitch/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
 
 // export const Sibling = () => {
 //   console.log('Sibling Component')
@@ -22,4 +25,4 @@ export default App
 //     <h1>Component Siblling</h1>
 //     </>
 //   )
-// }
+// }ff
