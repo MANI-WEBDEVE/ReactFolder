@@ -2,10 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.complete {
- text-decoration: line-through;
-}
-
-.unComplete {
-    text-decoration: none;
+body {
+ background: rgb(7,75,70);
+    background: linear-gradient(246deg, rgba(7,75,70,1) 6%, rgba(8,76,96,1) 50%, rgba(19,84,58,1) 92%);;
 }

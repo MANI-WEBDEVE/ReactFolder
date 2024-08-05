@@ -1,12 +1,15 @@
 
 import { GridBackgroundDemo } from './components/GridBackgroundDemo'
+import Todo from "./Todo/Todo"
+
 
 function App() {
 
   return (
     <>
     <section>
-     <GridBackgroundDemo/>
+     {/* <GridBackgroundDemo/> */}
+     <Todo/>
       
     </section>
 
