@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.complete {
+ text-decoration: line-through;
+}
+
+.unComplete {
+    text-decoration: none;
+}
