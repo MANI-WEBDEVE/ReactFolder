@@ -12,10 +12,6 @@ const TodoDate = ({onStateSetTime, onStateTime}) => {
         return () => clearInterval(interval);
       }, []);
     
-      const handleAllDelete = () => {
-        setTask([]);
-      };
-
 
 
   return (
