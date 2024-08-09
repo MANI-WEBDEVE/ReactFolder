@@ -16,7 +16,7 @@ const TodoDate = ({onStateSetTime, onStateTime}) => {
 
   return (
     <>
-        <h1 className="text-2xl mt-2 font-medium text-center text-black  ">
+        <h1 className="text-2xl mt-4 font-medium text-center text-black  ">
           {onStateTime}
         </h1>
     </>

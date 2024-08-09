@@ -5,6 +5,7 @@
 
 .isCompelet {
     text-decoration: line-through;
+    color: rgba(14, 13, 13, 0.52);
 }
 .unCompelet {
     text-decoration: none;
