@@ -33,7 +33,7 @@ const App1 = () => {
   };
 
   const handleEdit = (e, id) => {
-    let t = todos.filter(item=> item.id === id)
+    let t = todos.filter(item => item.id === id)
     setTodo(t[0].todo)
 
     let toodod = todos.filter(item => item.id !== id)
