@@ -90,3 +90,11 @@ form button {
   background-color: rgba(45, 118, 45, 0.397);
 }
 
+form textarea {
+  border: none;
+  background-color: #2e2f31;
+}
+
+.mainDiv {
+ height: 270vh;
+}
