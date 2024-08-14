@@ -4,7 +4,8 @@
 //* import ToggleSwitch from "./projectHook/toggleSwitch/ToggleSwitch";
 //* import UesStateChallange from "./useState-challange/UesStateChallange";
 //* import UseEffect01 from "../src/components/useEffect/UseEffect01";
-import EffectChallenge from "./components/useEffect/EffectChallenge";
+import CleanUpFunctionUseEffect from "./components/useEffect/CleanUpFunctionUseEffect";
+// import EffectChallenge from "./components/useEffect/EffectChallenge";
 
 
 
@@ -22,7 +23,8 @@ function App() {
 
       {/* //* useEffect Import */}
       {/* <UseEffect01/> */}
-      <EffectChallenge />
+      {/* <EffectChallenge /> */}
+      <CleanUpFunctionUseEffect/>
     </>
   );
 }
