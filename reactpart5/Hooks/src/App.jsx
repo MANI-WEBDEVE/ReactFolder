@@ -1,10 +1,19 @@
 //* import DerivdState from "./components/Hooks/DerivdState";
 
+import ContextTest from "./components/ContextTest";
+import ParentComponent from "./components/PropDrilling";
+import { BioProvider } from "./components/useContextAPI/ContextApi";
+import Home from "./components/useContextAPI/Home";
+
+// import HowToFetchApi from "./components/useEffect/HowToFetchApi";
+// import FirstUseRef from "./components/useRef/FirstUseRef";
+// import UseId from "./components/useId/UseId";
+
 
 //* import ToggleSwitch from "./projectHook/toggleSwitch/ToggleSwitch";
 //* import UesStateChallange from "./useState-challange/UesStateChallange";
 //* import UseEffect01 from "../src/components/useEffect/UseEffect01";
-import CleanUpFunctionUseEffect from "./components/useEffect/CleanUpFunctionUseEffect";
+// import CleanUpFunctionUseEffect from "./components/useEffect/CleanUpFunctionUseEffect";
 // import EffectChallenge from "./components/useEffect/EffectChallenge";
 
 
@@ -24,7 +33,16 @@ function App() {
       {/* //* useEffect Import */}
       {/* <UseEffect01/> */}
       {/* <EffectChallenge /> */}
-      <CleanUpFunctionUseEffect/>
+      {/* <CleanUpFunctionUseEffect/> */}
+      {/* <HowToFetchApi/> */}
+      {/* <FirstUseRef/> */}
+      {/* <ForwardRef/> */}
+      {/* <UseId/> */}
+      {/* <ParentComponent/> */}
+      <BioProvider>
+        <Home/>
+      <ContextTest/>
+      </BioProvider>
     </>
   );
 }
