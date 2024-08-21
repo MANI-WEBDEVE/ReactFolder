@@ -5,6 +5,7 @@ import ParentComponent from "./components/PropDrilling";
 import { BioProvider } from "./components/useContextAPI/ContextApi";
 import Home from "./components/useContextAPI/Home";
 import { DarkLight, ThemeProvider } from "./components/useContextAPI/LightAndDarmMode";
+import UseReducer from "./components/UseReducer/UseReducer";
 import "./index.css"
 
 // import HowToFetchApi from "./components/useEffect/HowToFetchApi";
@@ -42,13 +43,17 @@ function App() {
       {/* <UseId/> */}
       {/* <ParentComponent/> */}
       {/* <h1 className="text-2xl font-bold ">Heloo </h1>
+      * Context API Syntex
       <BioProvider>
         <Home/>
       <ContextTest/>
       </BioProvider> */}
-      <ThemeProvider>
+      {/* <ThemeProvider>
         <DarkLight/>
-      </ThemeProvider>
+      </ThemeProvider> */}
+      {/* //* Context API Syntex */}
+
+        <UseReducer/>
     </>
   );
 }
