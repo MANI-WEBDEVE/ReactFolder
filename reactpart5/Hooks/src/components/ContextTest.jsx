@@ -1,15 +1,9 @@
-import { useContext } from "react"
-import { BioContext } from "./useContextAPI/ContextApi"
+import { useBioProvider } from "./useContextAPI/ContextApi";
 
 function ContextTest() {
+  const { data, data2 } = useBioProvider();
 
-    const {data, data2} = useContext(BioContext)
-
-  return (
-    <div>
-      heloo second : {data}
-    </div>
-  )
+  return <div className="text-2xl " >heloo second : {data}</div>;
 }
 
-export default ContextTest
+export default ContextTest;

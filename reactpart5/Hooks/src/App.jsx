@@ -4,6 +4,8 @@ import ContextTest from "./components/ContextTest";
 import ParentComponent from "./components/PropDrilling";
 import { BioProvider } from "./components/useContextAPI/ContextApi";
 import Home from "./components/useContextAPI/Home";
+import { DarkLight, ThemeProvider } from "./components/useContextAPI/LightAndDarmMode";
+import "./index.css"
 
 // import HowToFetchApi from "./components/useEffect/HowToFetchApi";
 // import FirstUseRef from "./components/useRef/FirstUseRef";
@@ -39,10 +41,14 @@ function App() {
       {/* <ForwardRef/> */}
       {/* <UseId/> */}
       {/* <ParentComponent/> */}
+      {/* <h1 className="text-2xl font-bold ">Heloo </h1>
       <BioProvider>
         <Home/>
       <ContextTest/>
-      </BioProvider>
+      </BioProvider> */}
+      <ThemeProvider>
+        <DarkLight/>
+      </ThemeProvider>
     </>
   );
 }
