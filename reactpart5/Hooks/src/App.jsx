@@ -1,11 +1,14 @@
 //* import DerivdState from "./components/Hooks/DerivdState";
 
-import ContextTest from "./components/ContextTest";
-import ParentComponent from "./components/PropDrilling";
-import { BioProvider } from "./components/useContextAPI/ContextApi";
-import Home from "./components/useContextAPI/Home";
-import { DarkLight, ThemeProvider } from "./components/useContextAPI/LightAndDarmMode";
-import UseReducer from "./components/UseReducer/UseReducer";
+// import ContextTest from "./components/ContextTest";
+// import ReactMemo from "./components/Memo/ReactMemo";
+import UseCallback from "./components/Memo/UseCallback";
+import UseMemo from "./components/Memo/UseMemo"
+// import ParentComponent from "./components/PropDrilling";
+// import { BioProvider } from "./components/useContextAPI/ContextApi";
+// import Home from "./components/useContextAPI/Home";
+// import { DarkLight, ThemeProvider } from "./components/useContextAPI/LightAndDarmMode";
+// import UseReducer from "./components/UseReducer/UseReducer";
 import "./index.css"
 
 // import HowToFetchApi from "./components/useEffect/HowToFetchApi";
@@ -52,8 +55,10 @@ function App() {
         <DarkLight/>
       </ThemeProvider> */}
       {/* //* Context API Syntex */}
-
-        <UseReducer/>
+        {/* <UseReducer/> */}
+        {/* <ReactMemo/> */}
+      {/* <UseMemo/> */}
+      <UseCallback/>
     </>
   );
 }
