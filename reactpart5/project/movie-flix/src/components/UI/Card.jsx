@@ -1,10 +1,10 @@
 import React from "react";
 
 const Card = ({ data }) => {
-    const { Poster, imdbID,Title } = data;
+    const { Poster, imdbID, Title } = data;
     return (
         <li className="m-12  ">
-            <div className={`p-0 border border-gray-600/50 shadow-2xl hover:shadow-orange-600/40 transition-all hover:duration-300 rounded-lg`}>
+            <div className={`p-0 border border-gray-600/50 shadow-2xl hover:shadow-orange-600/40 hover:-translate-y-1 hover:scale-110 hover:duration-300 rounded-lg transition ease-in-out delay-150  duration-300`}>
 
                 <div className="p-2 hover:z-10 hover:shadow-orange-500/50 hover:shadow-xl ">
                     <img src={Poster} alt="" className="object-cover w-[300px] h-[300px]" />

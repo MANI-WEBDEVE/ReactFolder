@@ -6,7 +6,7 @@ import About from "../src/pages/About"
 import Movie from "./pages/Movie";
 import ErrorPage from "./pages/ErrorPage";
 
-import getApiData from "./api/getApi";
+// import getApiData from "./api/getApi";
 
 function App() {
 
@@ -31,7 +31,6 @@ function App() {
         },
         {
           path: "movie",
-         loader:getApiData,
           element: <Movie/>,
         },
       ]
