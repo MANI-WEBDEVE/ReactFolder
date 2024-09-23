@@ -7,9 +7,11 @@ const counterSlice = createSlice({
     reducers: {
         increamenrt: (state) => {
             state += 1
+            return state
         },
         decrement: (state) => {
             state -= 1
+            return state
         }
     }
 })
