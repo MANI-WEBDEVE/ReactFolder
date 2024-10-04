@@ -2,7 +2,6 @@ import {useMutation, useQuery, useQueryClient} from "@tanstack/react-query";
 import apiData from "../API/api";
 
 const FetchRQ = () => {
-  const queryClient = useQueryClient()
   const getDataApi = async () => {
     try {
       const response = await apiData();
@@ -14,8 +13,10 @@ const FetchRQ = () => {
   };
 
   const { data, isLoading, error } = useQuery({
-    queryKey: ["posts"],
-    queryFn: getDataApi,
+    queryKey: ["posts"], //* key --> useState like "posts"
+    queryFn: getDataApi, //* fn --> useEffect like () => {}
+    gcTime: "10s", //* cache time
+    // staleTime: "10000", //* stale time --> 10s
   })
 
 
@@ -29,7 +30,7 @@ const FetchRQ = () => {
 
   return (
     <div>
-      {data?.map((item, index) => {
+      {data?.slice(0,10).map((item, index) => {
         return <div key={index}>{item.title}</div>;
       })}
     </div>
