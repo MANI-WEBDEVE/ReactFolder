@@ -15,7 +15,7 @@ const FetchRQ = () => {
   const { data, isLoading, error } = useQuery({
     queryKey: ["posts"], //* key --> useState like "posts"
     queryFn: getDataApi, //* fn --> useEffect like () => {}
-    gcTime: "10s", //* cache time
+    //* gcTime: "10s", //* cache time
     // staleTime: "10000", //* stale time --> 10s
   })
 
