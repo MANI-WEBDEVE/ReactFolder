@@ -10,17 +10,17 @@ const Header = () => {
     <nav>
       <ul >
         <li>
-          <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : undefined)}>
+          <NavLink to="/" >
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink to="/fetch-old" className={({ isActive }) => (isActive ? 'active' : undefined)}>
+          <NavLink to="/fetch-old" >
             Fetch Old
           </NavLink>
         </li>
         <li>
-          <NavLink to="/fetch-rq" className={({ isActive }) => (isActive ? 'active' : undefined)}>
+          <NavLink to="/fetch-rq" >
             Fetch RQ
           </NavLink>
         </li>

@@ -9,3 +9,13 @@ const apiData = () => {
 }
 
 export default apiData
+
+export const fetchIndvdualData = async (id) => {
+  try {
+    const response = await fetchApi.get(`/posts/${id}`)
+    const data = await response.data;
+    return await data
+  } catch (error) {
+    console.log(error)
+  }
+}

@@ -7,7 +7,6 @@ const FetchOld = () => {
   const getDataApi = async () => {
     try {
       const response = await apiData();
-      console.log(response.data);
       setDataApi(response.data);
     } catch (error) {
       console.log(error.message);
